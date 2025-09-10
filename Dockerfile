@@ -1,4 +1,3 @@
-cat > Dockerfile << 'EOF'
 FROM python:3.9-slim
 
 WORKDIR /app
@@ -24,6 +23,5 @@ EXPOSE 8501
 # Health check
 HEALTHCHECK CMD curl --fail http://localhost:8501/_stcore/health
 
-# Run the application
-ENTRYPOINT ["streamlit", "run", "app.py", "--server.port=8501", "--server.address=0.0.0.0"]
-EOF
+# Run the enhanced application by default
+ENTRYPOINT ["streamlit", "run", "app_realtime.py", "--server.port=8501", "--server.address=0.0.0.0"]

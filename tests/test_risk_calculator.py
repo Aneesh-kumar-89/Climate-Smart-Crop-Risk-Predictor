@@ -1,4 +1,3 @@
-cat > tests/test_risk_calculator.py << 'EOF'
 import unittest
 import sys
 import os
@@ -61,4 +60,3 @@ class TestCropRiskCalculator(unittest.TestCase):
 
 if __name__ == '__main__':
     unittest.main()
-EOF

@@ -693,7 +693,7 @@ def main():
                     go.Bar(
                         x=list(probabilities.keys()),
                         y=list(probabilities.values()),
-                        marker_color=['#f44336' if x=='High' else '#ff9800' if x=='Medium' else '#4caf50' 
+                        marker_color=['#000000' if x=='High' else '#000000' if x=='Medium' else '#000000' 
                                      for x in probabilities.keys()]
                     )
                 ])

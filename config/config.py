@@ -1,4 +1,3 @@
-cat > config/config.py << 'EOF'
 import os
 from dotenv import load_dotenv
 
@@ -46,4 +45,3 @@ DEPLOY_CONFIG = {
     'host': '0.0.0.0',
     'debug': False
 }
-EOF
